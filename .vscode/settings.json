@@ -1,0 +1,40 @@
+{
+  // Auto save
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["javascript"],
+  "cSpell.words": [
+    "audioonly",
+    "Buscar",
+    "Configurar",
+    "davinci",
+    "descargado",
+    "descargame",
+    "Descargar",
+    "disponible",
+    "enviame",
+    "Enviar",
+    "Esta",
+    "está",
+    "funcionalidad",
+    "generame",
+    "Generar",
+    "imagen",
+    "Manejar",
+    "mensaje",
+    "música",
+    "openai",
+    "Procesar",
+    "respuesta",
+    "solicitada",
+    "solicitud",
+    "tema",
+    "terceros",
+    "usuario",
+    "utilizando",
+    "ytdl"
+  ]
+}

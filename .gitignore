@@ -1,0 +1,3 @@
+# git ignore file, ignore config.js and node_modules
+node_modules
+config.js
