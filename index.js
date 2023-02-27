@@ -16,7 +16,32 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 
-// Manejar la solicitud de mensaje de Telegram
+// Handle /start command
+bot.onText(/\/start/, (msg) => {
+  const chatId = msg.chat.id;
+  bot.sendMessage(
+    chatId,
+    `Hola, soy RogueAi y estoy aquí para ayudarte.
+    Cuento con las siguientes funcionalidades:
+    - Puedo generar respuestas a tus mensajes utilizando la API de OpenAI.
+    - Puedo enviarte una imagen de lo que me pidas utilizando la API de Unsplash.
+    - Puedo enviarte una canción que me pidas utilizando la API de OpenAI y Youtube.
+    - Puedo generar imágenes utilizando la API de OpenAI.
+    
+    No necesitas usar ningún comando para utilizar mis funcionalidades, solo envíame un mensaje y yo te responderé.
+    
+    Ejemplos:
+    - Explicame la teoría de la relatividad
+    - Cuanto es 12 * 8?
+    - enviame una imagen de perros
+    - generame una imagen de un perro con gafas
+    - descargame la canción de la pelicula top gun
+
+    `
+  );
+});
+
+// Handle messages from the user
 bot.on('message', async (msg) => {
   const chatId = msg.chat.id;
   const message = msg.text;
